@@ -1,0 +1,14 @@
+1.How to add remote repository in vs code step by step
+
+git init   
+git remote add origin https://github.com/username/repo-name.git   
+git remote -v   ##Verify the remote
+git branch -M main
+git push -u origin main   
+
+
+2.If face issue in above use this-- Git conflict not able to add remote and push into main
+
+git pull --rebase origin main   # fetch remote commits and put your local commits on top
+git push -u origin main        # push after integrating (set upstream first time)
+# if there are conflicts: resolve files, then run `git rebase --continue` and push
