@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import ProfileCard from './Components/ProfileCard'
 import Counter from './Components/Counter'
+import CharacterCounter from './Components/CharacterCounter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,8 @@ function App() {
 
 
        <Counter />
+
+       <CharacterCounter />
     </div>
   );
 }
