@@ -25,11 +25,9 @@ function CharacterCounter() {
 
       {text.length > 10 && <p>Limit Exceeded</p>}
 
-      <button onClick={(e)=>{
+      <button onClick={()=>{
         setText("");
-        e.target.value = "";
-
-      }}>Reset</button>
+       }}>Reset</button>
 
     </div>
   );
